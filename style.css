@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    background-color: #fabea7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('beerBG.jpg');
+    background-size: cover;
+    width: 100%;
+    font-family: "Old Standard TT", serif;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
+}
+
+.header_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 0px;
+}
+
+.beer_button {
+    background-color: #81b214;
+    width: 40%;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin-bottom: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.reset_button {
+    background-color: #FF4500;
+    width: 40%;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.selection {
+    display: flex;
+    width: 50%;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+select {
+    width: 40%;
+    font-size: 1rem;
+}
+
+.pagination {
+    background-color: #ffa500;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.beers {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 700px;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
+}
+
+.beer_img {
+    object-fit: contain;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.beer_name {
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    font-size: 2rem;
+}
+
+.beer_tagline {
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #0000FF;
+    padding-bottom: 10px;
+    margin: 0% 5% 20px 5%;
+}
+
+.beer_description {
+    margin-bottom: 20px;
+}
+
+.beer_pairing {
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+        border-radius: 5px;
+    }
+    .beer_card {
+        height: 550px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .beer_card {
+        flex-direction: row;
+        width: 1000px;
+    }
+
+    .beer_img {
+        height: 450px;
+        width: 250px;
+        margin-right: 100px;
+    }
+
+    .beer_info {
+        width: 100%;
+    }
+}
